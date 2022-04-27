@@ -1,8 +1,8 @@
-# stat 8010 practise exam 3
+# stat 8010 practice exam 3
 
 # Question 1)
 
-# calculating tge sensitivity of the swab test
+# calculating the sensitivity of the swab test
 
 covid_tests = matrix(c(229, 95, 84, 57), ncol=2, byrow=TRUE)
 colnames(covid_tests) = c('swab', 'saliva')
@@ -31,7 +31,7 @@ upper_bound
 
 # Question 1b)
 
-# probablity of negative saliva test results = 57 / 152
+# probability of negative saliva test results = 57 / 152
 
 prob = covid_tests[2, 2] / sum(covid_tests[, 2])
 prob
