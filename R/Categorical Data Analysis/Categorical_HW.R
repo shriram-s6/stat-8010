@@ -19,10 +19,10 @@ pi_hat
 
 # calculating test statistic 
 pi_not = 0.5
-sigma_hat = sqrt((pi_hat * (1 - pi_hat)) / 200)
+sigma_hat = sqrt((pi_not * (1 - pi_not)) / 200)
 test_statistic = abs(pi_hat - pi_not) / sigma_hat
 print(test_statistic)
-# 2.439675
+# 2.404163
 
 # calculating z for the given significance level. Since we are asked to build a 95% CI, alpha = 0.05
 alpha = 0.05
@@ -133,7 +133,7 @@ chi_square_cv
 
 # can you determine that sleeping in late is what's causing the paper to be missing?
 
-# The rejection of null hypothesis indicates only that the apparent associationis not reasonably attributable to chance.
+# The rejection of null hypothesis indicates only that the apparent association is not reasonably attributable to chance.
 # It does not indicate anything about the strength or type of association. So we cannot say that sleeping late is causing the paper to be missing.
 
 # Question 3)
