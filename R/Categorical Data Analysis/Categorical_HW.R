@@ -14,10 +14,11 @@ pi_hat
 # 0.415
 
 # is it reasonable to conclude that the true proportion of children living in these villages with anemia is equal to 50% ?
-# Null hypothesis, pi0 = 0.50
-# Alternative hypothesis, pi0 != 0.50
+# Null hypothesis, pi_hat = pi0 
+# Alternative hypothesis, pi_hat != pi0
 
 # calculating test statistic 
+# when the null hypothesis is pi_hat = pi0, we should use pi_not to calculate the test statistic. Otherwise we should use pi_hat.
 pi_not = 0.5
 sigma_hat = sqrt((pi_not * (1 - pi_not)) / 200)
 test_statistic = abs(pi_hat - pi_not) / sigma_hat
@@ -34,6 +35,7 @@ print(z)
 # There is enough evidence to conclude that the true proportion of children living in these villages with anemia is not equal to 50%
 
 # confidence interval
+sigma_hat = sqrt((pi_hat * (1 - pi_hat)) / 200)
 lower_bound = pi_hat - (z * sigma_hat)
 print(lower_bound)
 # 0.3467135
